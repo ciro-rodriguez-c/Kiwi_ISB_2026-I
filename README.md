@@ -1,6 +1,6 @@
 # KIWI
 
-# Integrantes
+## Integrantes
 - Adriano Estrada
 - Alexander Martínez
 - Ciro Rodríguez
