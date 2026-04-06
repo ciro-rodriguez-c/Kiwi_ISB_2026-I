@@ -58,17 +58,26 @@ Para los fines del curso, el enfoque principal se centrará en el desarrollo y v
 
 ## REFERENCIAS
 
-[1] Informes de Expertos, "Mercado de Bebidas Energizantes en Perú...", 2026.  
-[2] "Moda o riesgo: el 60% de los jóvenes consume bebidas energéticas," Salud con lupa, 2024.  
-[3] S. Breda et al., *Frontiers in Public Health*, 2014.  
-[4] EFSA, *Opinión científica sobre la seguridad de la cafeína*, 2015.  
-[5] S. Visram et al., *BMJ Open*, 2016.  
-[6] S. M. Al-Hadithy et al., *Surgical Neurology International*, 2013.  
-[7] R. S. Levangie y C. C. Norkin, 2011.  
-[8] Deuschl et al., 2019.  
-[9] Kahathuduwa et al., 2016.  
-[10] Rissanen, 2011.  
-[11] Li et al., 2024.  
-[12] Smith, 2021.  
-[13] Zhu et al., 2023.  
-[14] Neural Rehabilitation Group.
+[1] Informes de Expertos, "Mercado de Bebidas Energizantes en Perú: Por Producto (Bebidas, Tragos, Mezcladores); Por Envase (Latas, Botellas); Por Canal de Distribución (On-Trade, Off Trade); Dinámica del Mercado (2026-2035) y Panorama Competitivo," Abr. 2026.
+
+[2] "Moda o riesgo: el 60% de los jóvenes consume bebidas energéticas," Salud con lupa, 2024.
+
+[3] S. Breda, K. Whiting, J. Encarnação, J. Norberg, J. Jones, M. Reinap, y J. Jewell, “Consumo de bebidas energéticas en Europa: una revisión de los riesgos, los efectos adversos para la salud y las opciones políticas para responder,” Frontiers in Public Health, vol. 2, 2014.
+
+[4] EFSA, “Opinión científica sobre la seguridad de la cafeína,” Revista EFSA, 2015.
+
+[5] S. Visram, G. Cheetham, J. Riby, J. Crossley, y A. Lake, “Consumption of energy drinks by children and young people: A rapid review examining evidence of physical effects and consumer attitudes,” BMJ Open, vol. 6, no. 10, 2016.
+
+[6] S. M. Al-Hadithy, J. G. Gikas, y P. Mahapatra, “Effect of energy drinks on microsurgical hand tremor,” Surgical Neurology International, vol. 4, 2013.
+
+[7] R. S. Levangie y C. C. Norkin, Estructura y función de las articulaciones: un análisis integral, 5ª ed., F.A. Davis, 2011.
+
+[8] Deuschl, G., et al. (2019). "How to do an electrophysiological study of tremor." Clinical Neurophysiology Practice. [DOI: 10.1016/j.cnp.2019.06.002]
+
+[9] Kahathuduwa, C. N., et al. (2016). "Task-specific kinetic finger tremor affects the performance of carrom players." Journal of Sports Sciences. [DOI: 10.1080/02640414.2015.1078487]
+
+[10] Rissanen, S. (2011). "Surface electromyography and kinematic measurements in Parkinson's disease: analysis methods for differential diagnosis and quantification of treatment." University of Eastern Finland.
+
+[11]  Li, Y., et al. (2024). "Characteristics of Post-Exercise lower limb muscle tremor among speed skaters." Sensors. [DOI: 10.3390/s25144301]
+
+[12]  Smith, J. (2021). "Analysis of Electromyographic Effects of Peripheral Sensory Stimulation on Essential Tremor." BYU ScholarsArchive.
