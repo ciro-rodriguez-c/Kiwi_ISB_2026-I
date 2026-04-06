@@ -52,6 +52,8 @@ Para los fines del curso, el enfoque principal se centrará en el desarrollo y v
 
 ## PLAN DE ACTIVIDADES
 
+![Fiigura 1](images/imagen_2026-04-05_204949903.png)
+
 ---
 
 ## REFERENCIAS
