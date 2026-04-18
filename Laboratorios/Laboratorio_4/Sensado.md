@@ -4,9 +4,9 @@
 
 ## Fotos de la experiencia
 ### Foto de la conexión de la experiencias 1 (Tensión de puño)
-
+![Experiencia 1](images/imagen_2026-04-18_154251315.png)
 ### Foto de la conexión de la experiencia 2 (Tobillo)
-
+![Experiencia 2](images/imagen_2026-04-18_154337904.png)
 ---
 
 ## Ploteo de las señales
