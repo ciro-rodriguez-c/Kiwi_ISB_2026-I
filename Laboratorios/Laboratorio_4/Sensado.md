@@ -1,12 +1,4 @@
 # Laboratorio 4
-
----
-
-## Fotos de la experiencia
-### Foto de la conexión de la experiencias 1 (Tensión de puño)
-
-### Foto de la conexión de la experiencia 2 (Tobillo)
-
 ---
 
 ## Ploteo de las señales
