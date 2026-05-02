@@ -13,6 +13,49 @@ En primera instancia, se realizaron mediciones basales de 30 segundos en cada de
 
 El procesamiento de señales se realizó mediante el uso de MATLAB, con el objetivo de eliminar el ruido de la señal y mejorar su calidad para su análisis posterior. Se realizó el mismo procedimiento para todas las señales adquiridas. Iniciando, se eliminó el componente DC con el fin de centrarla alrededor de 0. Posteriormente, se aplicó un primer filtro pasa altas Butterworth de segundo orden con una frecuencia de cort de 0.5 Hz, con el objetivo de remover la derivación de la linea base de la señal (cual se presenta como una señal de frecuencia sumamente baja -menor al valor determinado- que alza o baja la señal de manera no deseada) [2]. Siguiendo, se aplicó un segundo filtro Butterworth de segundo orden, esta vez siendo un pasa banda en el rango 1 - 45 Hz, con el objetivo de conservar el contenido espectrar de interes del ECG y atenuar los componente de ruido de alta frecuencia no deseados. Finalmente, a esta señal filtrada se le aplicó la Transformada Rápida de Fourier (FFT) para obtener su representación en el dominió de la frecuenicia. Este procesamiento es consistente con los enfoques estándar de acondicionamiento de señales ECG, los cuales buscan mejorar la relación señal-ruido y facilitar la extracción de información relevante [2]. 
 
+### Código empleado
+```matlab
+%Carga de archivos
+pathfile = '...'
+ekg_vector = readmatrix(pathfile)
+
+%Frecuencia de muestreo
+fs = 1000;
+T = 1/fs
+%Vector tiempo
+N = length(ekg_vector); % cantidad de muestras
+t_vect = (0:N-1)*T;
+
+#Remoción del componente DC
+ekg_centered = ekg_vector - mean(ekg_vector);
+
+%Diseño del filtro pasa altas
+fc = 0.5;
+Wn = fc/(fs/2); % frecuencia normalizada
+[b,a] = butter(2, Wn, 'high');
+ekg_filt = filtfilt(b, a, ekg_centered);
+
+%DIseño del filtro pasa banda
+fc1 = 1; % frecuencia de corte inferior
+fc2 = 45; % frecuencia de corte superior
+Wn = [fc1 fc2]/(fs/2);
+[b,a] = butter(2, Wn, 'bandpass'); % orden 2
+ekg_bp = filtfilt(b, a, ekg_centered);
+
+%FFT de la señal y ploteo final
+ekg_bp_fft = fft(ekg_bp); % hallamos la fft de la señal
+P2 = abs(ekg_bp_fft/N); % espectro normalizado
+P1 = P2(1:N/2+1); % mitad positiva
+P1(2:end-1) = 2*P1(2:end-1); % corregir amplitud
+f = fs*(0:(N/2))/N; % ajustamos el dominio de la frecuencia para plotear
+figure;
+plot(f, P1);
+xlabel('Frecuencia (Hz)'); ylabel('Amplitud'); title('Espectro de frecuencia del
+ECG');
+grid on;
+xlim([0 30]);
+```
+
 ---
 
 ## Análisis de resultados
