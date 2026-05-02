@@ -45,7 +45,7 @@ En conjunto, el resultado es coherente con una prueba de apnea breve o retenció
 ## Homeguide
 ### Q1. What are the most typical types of noise sources affecting ECG?
 
-Los tipos más comunes de ruido que afectan una señal ECG son la **interferencia de la red eléctrica**, la **deriva de la línea base**, el **ruido muscular o electromiográfico**, los **artefactos por movimiento**, el **mal contacto de los electrodos** y el **ruido propio del sistema de adquisición**. Estos ruidos son importantes porque pueden distorsionar la morfología del ECG y dificultar la detección correcta de los complejos cardíacos, especialmente el complejo QRS [1]–[3].
+Los tipos más comunes de ruido que afectan una señal ECG son la interferencia de la red eléctrica, la deriva de la línea base, el ruido muscular o electromiográfico, los artefactos por movimiento, el mal contacto de los electrodos y el ruido propio del sistema de adquisición. Estos ruidos son importantes porque pueden distorsionar la morfología del ECG y dificultar la detección correcta de los complejos cardíacos, especialmente el complejo QRS [1]–[3].
 
 * **Interferencia de la red eléctrica:**  
   Proviene de la corriente eléctrica del ambiente. En Perú, la red eléctrica trabaja normalmente a **60 Hz**, por lo que esta interferencia puede aparecer alrededor de esa frecuencia. Puede generarse por cables, equipos eléctricos cercanos o una mala conexión a tierra [1].
@@ -69,7 +69,7 @@ Los tipos más comunes de ruido que afectan una señal ECG son la **interferenci
 
 Cambiar la posición de los sensores en las derivaciones **I, II y III** cambia los componentes de la señal ECG porque cada derivación registra la actividad eléctrica del corazón desde una dirección distinta. Las derivaciones I, II y III son derivaciones bipolares de las extremidades, es decir, miden diferencias de potencial eléctrico entre dos electrodos ubicados en distintas posiciones del cuerpo [4]–[6].
 
-El corazón genera señales eléctricas durante la despolarización y repolarización. Sin embargo, cada derivación no registra toda la actividad eléctrica de la misma forma, sino la **proyección del vector eléctrico cardíaco** sobre el eje de esa derivación. Por eso, al cambiar de una derivación a otra, también cambia la forma en que se observan las ondas P, QRS y T [6], [7].
+El corazón genera señales eléctricas durante la despolarización y repolarización. Sin embargo, cada derivación no registra toda la actividad eléctrica de la misma forma, sino la proyección del vector eléctrico cardíaco sobre el eje de esa derivación. Por eso, al cambiar de una derivación a otra, también cambia la forma en que se observan las ondas P, QRS y T [6], [7].
 
 Generalmente, la derivación II suele mostrar una señal más clara y de mayor amplitud porque su dirección se parece más al eje eléctrico normal del corazón durante la despolarización ventricular. Además, si la actividad eléctrica se dirige hacia el electrodo positivo, la onda se observa positiva; si se aleja, se observa negativa; y si el vector eléctrico va casi perpendicular al eje de la derivación, la amplitud registrada disminuye [4]–[8].
 
