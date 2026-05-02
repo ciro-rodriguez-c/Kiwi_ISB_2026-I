@@ -20,7 +20,11 @@ Entre los tres registros, HV D2_1 presenta una señal relativamente clara con ar
 
 ### Segunda señal basal
 
-c
+Los resultados de la segunda señal basal muestran un comportamiento coherente con una medición EKG en reposo. En los tres registros se identifican complejos QRS claros, repetitivos y relativamente regulares, con mayor concentración de energía en frecuencias bajas y medias. Esto confirma que el filtrado aplicado permitió conservar las componentes principales del EKG y mejorar su visualización.
+En comparación con la primera señal basal, esta segunda medición mantiene un patrón similar de reposo, aunque en algunos registros, especialmente Basal2 D2 y Basal2 D3, los complejos QRS se observan más altos y definidos. Esta diferencia no necesariamente indica un cambio fisiológico importante, sino que puede deberse a una mejor colocación de los electrodos, menor movimiento corporal o mejor contacto piel-electrodo durante la medición.
+
+Al compararla con los archivos de hiperventilación (HV), la segunda señal basal presenta menor variabilidad y una línea base más estable. En HV se observó mayor irregularidad y más componentes de baja frecuencia, probablemente asociadas a la respiración forzada y al movimiento torácico. Por ello, esta segunda señal basal puede considerarse una referencia adicional de reposo para contrastar los cambios producidos por la hiperventilación y otras condiciones experimentales.
+
 
 ### Actividad física (Burpees)
 
@@ -29,7 +33,13 @@ Los resultados muestran que las señales EKG registradas después de realizar bu
 En los tres registros se observa que el filtrado aplicado permitió mejorar la visualización de la señal y conservar los componentes principales del EKG. Burpees D1 muestra una señal clara y con frecuencias dominantes identificables alrededor de 2.5, 5, 10 y 16 Hz. Burpees D2 presenta mayor variabilidad y posibles artefactos, mientras que Burpees D3 muestra picos QRS bastante marcados y regulares. En conjunto, los resultados reflejan adecuadamente una señal cardíaca posterior al ejercicio, medida con BITalino, donde la persona ya no se encontraba en reposo sino bajo los efectos fisiológicos de una actividad física previa.
 
 ### Contención de respiración
-e
+
+La señal obtenida durante el test de mantener la respiración tiene sentido, ya que durante la mayor parte del registro se observan complejos QRS claros, repetitivos y relativamente estables. Esto indica que el EKG se mantuvo interpretable y que el filtrado aplicado permitió conservar las componentes principales de la señal cardíaca.
+
+A diferencia de la hiperventilación, donde había mayor variabilidad por el movimiento torácico y la respiración forzada, en esta prueba la línea base parece más estable porque la persona redujo temporalmente el movimiento respiratorio. Sin embargo, hacia el final del registro se observa una zona más irregular, lo cual podría deberse al esfuerzo de seguir conteniendo la respiración, al reinicio de la respiración o a pequeños movimientos que afectaron el contacto de los electrodos.
+
+En conjunto, el resultado es coherente con una prueba de apnea breve o retención de aire: la señal mantiene una estructura cardíaca clara, pero presenta cambios finales compatibles con la incomodidad fisiológica o el retorno de la respiración. Para fortalecer el análisis, sería recomendable identificar exactamente el inicio y final de la retención, y calcular la frecuencia cardíaca antes, durante y después del test.
+
 
 ---
 ## Homeguide
