@@ -83,27 +83,28 @@ Generalmente, la derivación II suele mostrar una señal más clara y de mayor a
 En conclusión, las derivaciones **I, II y III** registran la misma actividad cardíaca, pero desde diferentes puntos de vista. Por eso, al cambiar la posición de los sensores, cambian principalmente la **amplitud**, la **polaridad** y la **forma** de las ondas **P**, **QRS** y **T**.
 
 ### Q3. Describe if there are major differences in the signal when acquiring the signal from different body locations (e.g., wrist / collarbone/ chest). What could be the cause? Did you expect such changes in the signal? Store a signal segment of each to visualize the differences
-Las señales capturadas en el pecho muestran amplitudes mucho más altas en comparación con las obtenidas en la muñeca o extremidades. Esto se debe a que los electrodos están físicamente más cerca de la fuente de activación eléctrica cardíaca. Respecto a la calidad de la señal, la relación señal-ruido es superior en la clavícula y el pecho. La muñeca presenta una alta susceptibilidad a los artefactos por movimiento y una mayor resistencia eléctrica debido al trayecto que la señal debe recorrer a través de diversos tejidos.
-La causa fundamental para esta diferencia es la distancia respecto al corazón y el fenómeno del conductor de volumen. Conforme la señal eléctrica se propaga por el cuerpo, atraviesa capas de piel, músculo y hueso que actúan atenuando la amplitud. Estos cambios son esperados puesto que el vector eléctrico del corazón se proyecta con mayor intensidad en las derivaciones cercanas al torso, y la proximidad física reduce la cantidad de ruido captado durante la trayectoria.
+Las señales capturadas en el pecho muestran amplitudes mucho más altas en comparación con las obtenidas en la muñeca o extremidades. Esto se debe a que los electrodos están físicamente más cerca de la fuente de activación eléctrica cardíaca [11]. Respecto a la calidad de la señal, la relación señal-ruido es superior en la clavícula y el pecho. La muñeca presenta una alta susceptibilidad a los artefactos por movimiento y una mayor resistencia eléctrica debido al trayecto que la señal debe recorrer a través de diversos tejidos [12].
+
+La causa fundamental para esta diferencia es la distancia respecto al corazón y el fenómeno del conductor de volumen. Conforme la señal eléctrica se propaga por el cuerpo, atraviesa capas de piel, músculo y hueso que actúan atenuando la amplitud 11]. Estos cambios son esperados puesto que el vector eléctrico del corazón se proyecta con mayor intensidad en las derivaciones cercanas al torso, y la proximidad física reduce la cantidad de ruido captado durante la trayectoria [12].
 
 ### Q4. The cardiac and the respiratory systems are well interconnected as is well known. Do you expect that different types of breathing (e.g. faster, deeper) to influence the ECG signals? Show screenshots of ECG signals in different respiratory circumstances and described the variations if there are any.
-En las señales correspondientes a la hiperventilación, se observa que la respiración rápida y profunda altera significativamente los intervalos R-R. Este fenómeno se conoce como "Arritmia Sinusal Respiratoria". Durante la fase de inhalación, la frecuencia cardíaca tiende a aumentar, lo que resulta en intervalos R-R más cortos. Por el contrario, durante la exhalación, la frecuencia disminuye y los intervalos se alargan. Adicionalmente, el movimiento mecánico del tórax durante la respiración profunda introduce un balanceo en la línea base (baseline wander) debido a las variaciones en la impedancia entre el electrodo y la piel.
+
+
+<img width="1553" height="525" alt="imagen" src="https://github.com/user-attachments/assets/25e8e3a6-e20d-462d-9f99-5c10f59147bd" />
+                                                                              Señal correspondiente al estado de Hiperventilación
+
+                      
+En las señales correspondientes a la hiperventilación, se observa que la respiración rápida y profunda altera significativamente los intervalos R-R. Este fenómeno se conoce como Arritmia Sinusal Respiratoria [10]. Durante la fase de inhalación, la frecuencia cardíaca tiende a aumentar, lo que resulta en intervalos R-R más cortos. Por el contrario, durante la exhalación, la frecuencia disminuye y los intervalos se alargan. Adicionalmente, el movimiento mecánico del tórax durante la respiración profunda introduce un balanceo en la línea base (baseline wander) debido a las variaciones en la impedancia entre el electrodo y la piel [12].
 ### Q5. In Home-Guide #1 you have seen that different amounts of force produced in the muscle generated signals with different amplitudes. How does movement influence your ECG signal?
-Las señales orrespondientes a la actividad de burpees muestran una interferencia de alta frecuencia muy marcada. Esto ocurre porque los músculos esqueléticos involucrados en el movimiento generan sus propios potenciales de acción eléctricos (electromiografía o EMG). Esta actividad muscular se superpone al ECG, creando un ruido que puede ocultar componentes clave como la onda P o la onda T. Para corregir esto, el procesamiento digital utiliza un filtro de banda de 1 a 45 Hz. Al eliminar las frecuencias por encima de 45 Hz se descarta el ruido muscular, mientras que el corte inferior a 1 Hz estabiliza la línea base que se ve afectada por el movimiento de los cables y el cuerpo.
-### Q6. To the best of your knowledge, how can you detect bradycardia and tachycardia in the ECG signal?
-Para determinar estas condiciones en la señal, se realiza el cálculo de la frecuencia cardíaca mediante la identificación de los picos R siguiendo este procedimiento:
+Las señales correspondientes a la actividad de burpees muestran una interferencia de alta frecuencia muy marcada. Esto ocurre porque los músculos esqueléticos involucrados en el movimiento generan sus propios potenciales de acción eléctricos (electromiografía o EMG) [12]. Esta actividad muscular se superpone al ECG, creando un ruido que puede ocultar componentes clave como la onda P o la onda T [10]. Para corregir esto, el procesamiento digital utiliza un filtro de banda de 1 a 45 Hz. Al eliminar las frecuencias por encima de 45 Hz se descarta el ruido muscular, mientras que el corte inferior a 1 Hz estabiliza la línea base que se ve afectada por el movimiento de los cables y el cuerpo [12].
+Para determinar estas condiciones en la señal, se realiza el cálculo de la frecuencia cardíaca mediante la identificación de los picos R siguiendo este procedimiento [10]:
 
 1. Detección de picos R: Se localizan los tiempos exactos de dos ondas R consecutivas, denominadas R1 y R2.
-2. Cálculo del intervalo R-R: Se obtiene la diferencia temporal entre ambos puntos.
-   
-$$\Delta T = R2 - R1$$
+2. Cálculo del intervalo R-R: Se obtiene la diferencia temporal entre ambos puntos mediante la resta Delta T = R2 - R1.
+3. Obtención de la frecuencia cardíaca: Se aplica la fórmula para convertir el tiempo a latidos por minuto (BPM): FC = 60 / Delta T.
 
-3. Obtención de la frecuencia cardíaca: Se aplica la fórmula para convertir el tiempo a latidos por minuto (BPM).
 
-$$\text{FC (BPM)} = \frac{60}{\Delta T}$$
-
-Criterios de detección aplicados:
-Se identifica taquicardia cuando la frecuencia cardíaca es superior a 100 BPM de forma sostenida. Se identifica bradicardia si la frecuencia es inferior a 60 BPM, situación que suele presentarse en los datos en estado basal si el sujeto se encuentra en reposo absoluto o posee un alto nivel de entrenamiento físico.
+Se identifica taquicardia cuando la frecuencia cardíaca es superior a 100 BPM de forma sostenida [10]. Se identifica bradicardia si la frecuencia es inferior a 60 BPM, situación que suele presentarse en los datos en estado basal si el sujeto se encuentra en reposo absoluto o posee un alto nivel de entrenamiento físico [9].
 
 ---
 ## Bibliografía
@@ -123,3 +124,10 @@ Se identifica taquicardia cuando la frecuencia cardíaca es superior a 100 BPM d
 [7] G. D. Gargiulo *et al*., “On the Einthoven Triangle: A Critical Analysis of the Single Rotating Dipole Hypothesis,” *Sensors*, vol. 18, no. 7, 2018. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC6068749/
 
 [8] M. AlGhatrif and J. Lindsay, “A brief review: history to understand fundamentals of electrocardiography,” *Journal of Community Hospital Internal Medicine Perspectives*, vol. 2, no. 1, 2012. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC3714093/
+[9] F. M. Kusumoto et al., "2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Rhythm Society," Circulation, vol. 140, no. 8, pp. e382-e482, ago. 2019.
+
+[10] A. L. Goldberger, Z. D. Goldberger, y A. Shvilkin, Goldberger's Clinical Electrocardiography: A Simplified Approach, 9.a ed. Filadelfia, PA, EE. UU.: Elsevier, 2017.
+
+[11] J. Malmivuo y R. Plonsey, Bioelectromagnetism: Principles and Applications of Bioelectric and Biomagnetic Fields. Nueva York, NY, EE. UU.: Oxford University Press, 1995.
+
+[12] J. G. Webster, Medical Instrumentation: Application and Design, 4.a ed. Hoboken, NJ, EE. UU.: John Wiley & Sons, 2009.
