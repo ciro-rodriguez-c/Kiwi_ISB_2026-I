@@ -59,7 +59,11 @@ xlim([0 30]);
 ---
 ## Resultados
 El formato de cada figura es el siguiente: Gráfica Amplitud vs tiempo (lado izquierdo) y Gráfica Amplitud vs Frecuencia (lado derecho)
-
+### ECG Basal DI
+<img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_012959017.png" />
+                                                                          
+                                                                              
+                                                            Fig1. ECG Basal DI
 
 ---
 
