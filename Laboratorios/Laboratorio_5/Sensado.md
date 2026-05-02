@@ -43,7 +43,7 @@ En conjunto, el resultado es coherente con una prueba de apnea breve o retenció
 
 ---
 ## Homeguide
-## Q1. What are the most typical types of noise sources affecting ECG?
+### Q1. What are the most typical types of noise sources affecting ECG?
 
 Los tipos más comunes de ruido que afectan una señal ECG son la **interferencia de la red eléctrica**, la **deriva de la línea base**, el **ruido muscular o electromiográfico**, los **artefactos por movimiento**, el **mal contacto de los electrodos** y el **ruido propio del sistema de adquisición**. Estos ruidos son importantes porque pueden distorsionar la morfología del ECG y dificultar la detección correcta de los complejos cardíacos, especialmente el complejo QRS [1]–[3].
 
@@ -65,9 +65,7 @@ Los tipos más comunes de ruido que afectan una señal ECG son la **interferenci
 * **Ruido del equipo o ruido electrónico interno:**  
   Puede originarse en los componentes del sistema de adquisición, como amplificadores, cables, sensores o conversores analógico-digitales. Aunque suele ser menor, también puede afectar la calidad de la señal ECG [1]–[3].
 
----
-
-## Q2. Why does the change of the positioning of the sensors (lead I-III) change the ECG signal components? How do the components change?
+### Q2. Why does the change of the positioning of the sensors (lead I-III) change the ECG signal components? How do the components change?
 
 Cambiar la posición de los sensores en las derivaciones **I, II y III** cambia los componentes de la señal ECG porque cada derivación registra la actividad eléctrica del corazón desde una dirección distinta. Las derivaciones I, II y III son derivaciones bipolares de las extremidades, es decir, miden diferencias de potencial eléctrico entre dos electrodos ubicados en distintas posiciones del cuerpo [4]–[6].
 
