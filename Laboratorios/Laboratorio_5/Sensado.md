@@ -29,18 +29,23 @@ e
 ## Homeguide
 ### Q1. What are the most typical types of noise sources affecting ECG?
 
-1.Interferencia de la red eléctrica
-Es uno de los ruidos más frecuentes. Proviene de la corriente eléctrica del ambiente, normalmente de 50 Hz o 60 Hz, dependiendo del país. Puede aparecer por cables, equipos eléctricos cercanos o una mala conexión a tierra.
-2.Ruido por movimiento del paciente
-Ocurre cuando el paciente se mueve durante el registro. Esto puede alterar el contacto entre los electrodos y la piel, generando cambios bruscos o distorsiones en la señal ECG.
-3.Ruido por mal contacto de los electrodos
-Se produce cuando los electrodos no están bien colocados, la piel no fue preparada adecuadamente o hay sudor, vello o grasa. Esto puede causar una señal inestable o con artefactos.
-4.Interferencia muscular o electromiográfica
-Aparece cuando los músculos del paciente se contraen, por ejemplo, si está tenso, temblando o hablando. Esta actividad eléctrica muscular puede mezclarse con la señal cardíaca.
-5.Deriva de la línea base
-Es una variación lenta de la señal ECG. Generalmente se debe a la respiración, movimientos del cuerpo o cambios en la impedancia entre la piel y el electrodo.
-6.Ruido del equipo o ruido electrónico interno
-Puede originarse en los componentes del sistema de adquisición, como amplificadores, cables, sensores o conversores analógico-digitales. Aunque suele ser menor, también puede afectar la calidad de la señal.
+* **Interferencia de la red eléctrica:**  
+  Proviene de la corriente eléctrica del ambiente, normalmente de **50 Hz o 60 Hz**, dependiendo del país. Puede aparecer por cables, equipos eléctricos cercanos o una mala conexión a tierra.
+
+* **Ruido por movimiento del paciente:**  
+  Ocurre cuando el paciente se mueve durante el registro. Esto puede alterar el contacto entre los electrodos y la piel, generando cambios bruscos o distorsiones en la señal ECG.
+
+* **Ruido por mal contacto de los electrodos:**  
+  Se produce cuando los electrodos no están bien colocados, la piel no fue preparada adecuadamente o hay sudor, vello o grasa. Esto puede causar una señal inestable o con artefactos.
+
+* **Interferencia muscular o electromiográfica:**  
+  Aparece cuando los músculos del paciente se contraen, por ejemplo, si está tenso, temblando o hablando. Esta actividad eléctrica muscular puede mezclarse con la señal cardíaca.
+
+* **Deriva de la línea base:**  
+  Es una variación lenta de la señal ECG. Generalmente se debe a la respiración, movimientos del cuerpo o cambios en la impedancia entre la piel y el electrodo.
+
+* **Ruido del equipo o ruido electrónico interno:**  
+  Puede originarse en los componentes del sistema de adquisición, como amplificadores, cables, sensores o conversores analógico-digitales. Aunque suele ser menor, también puede afectar la calidad de la señal.
 
 ### Q2. Why does the change of the positioning of the sensors (lead I-III) change the ECG signal components? How do the components change?
 
