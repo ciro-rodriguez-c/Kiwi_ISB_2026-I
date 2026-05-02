@@ -76,7 +76,7 @@ En conclusión, las  derivaciones **I, II y III** registran la misma actividad c
 ### Q3. Describe if there are major differences in the signal when acquiring the signal from different body locations (e.g., wrist / collarbone/ chest). What could be the cause? Did you expect such changes in the signal? Store a signal segment of each to visualize the differences
 c
 ### Q4. The cardiac and the respiratory systems are well interconnected as is well known. Do you expect that different types of breathing (e.g. faster, deeper) to influence the ECG signals? Show screenshots of ECG signals in different respiratory circumstances and described the variations if there are any.
-d
+En los segmentos identificados como HV (hiperventilación), se observa que la respiración rápida y profunda altera significativamente los intervalos R-R. Este fenómeno se conoce como Arritmia Sinusal Respiratoria. Durante la fase de inhalación, la frecuencia cardíaca tiende a aumentar, lo que resulta en intervalos R-R más cortos. Por el contrario, durante la exhalación, la frecuencia disminuye y los intervalos se alargan. Adicionalmente, el movimiento mecánico del tórax durante la respiración profunda introduce un balanceo en la línea base (baseline wander) debido a las variaciones en la impedancia entre el electrodo y la piel.
 ### Q5. In Home-Guide #1 you have seen that different amounts of force produced in the muscle generated signals with different amplitudes. How does movement influence your ECG signal?
 e
 ### Q6. To the best of your knowledge, how can you detect bradycardia and tachycardia in the ECG signal?
