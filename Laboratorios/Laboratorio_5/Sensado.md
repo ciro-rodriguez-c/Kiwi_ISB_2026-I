@@ -1,3 +1,8 @@
+## Introducción
+
+En este laboratorio se realizó la adquisición y análisis de señales ECG bajo diferentes condiciones fisiológicas, con el objetivo de evaluar cómo varía la actividad cardíaca frente a cambios en la respiración y la actividad física. Se registraron señales en estado basal, durante ciclos controlados de respiración (incluyendo hiperventilación e hipoventilación), y posterior a la realización de ejercicio físico (en nuestro caso, burpees).
+Adicionalmente, se analizaron la primera, segunda y tercera derivada de la señal ECG (I, II y III), con el fin de resaltar características relevantes de la señal. Este enfoque permite una mejor identificación de patrones fisiológicos en la dinámica cardíaca.
+
 ---
 
 ## Análisis de resultados
@@ -18,9 +23,9 @@ c
 d
 
 ### Contención de respiración
-
 e
 
+---
 ## Homeguide
 ### Q1. What are the most typical types of noise sources affecting ECG?
 a
