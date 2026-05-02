@@ -80,6 +80,11 @@ El formato de cada figura es el siguiente: Gráfica Amplitud vs tiempo (lado izq
                                                                           
                                                                               
                                                       Fig4. ECG Hiperventilación DII toma 1
+### ECG Hiperventilación DII toma 2
+<img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_023601770.png" />
+                                                                          
+                                                                              
+                                                      Fig4. ECG Hiperventilación DII toma 2
 ---
 
 ## Análisis de resultados
