@@ -74,7 +74,7 @@ El formato de cada figura es el siguiente: Gráfica Amplitud vs tiempo (lado izq
 <img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_023207133.png" />
                                                                           
                                                                               
-                                                            Fig2. ECG Basal DIII
+                                                            Fig3. ECG Basal DIII
 ### ECG Hiperventilación DII toma 1
 <img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_022739947.png" />
                                                                           
@@ -84,27 +84,32 @@ El formato de cada figura es el siguiente: Gráfica Amplitud vs tiempo (lado izq
 <img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_023601770.png" />
                                                                           
                                                                               
-                                                      Fig4. ECG Hiperventilación DII toma 2
+                                                      Fig5. ECG Hiperventilación DII toma 2
 ### ECG Hiperventilación DII toma 3
 <img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_023744166.png" />
                                                                           
                                                                               
-                                                      Fig4. ECG Hiperventilación DII toma 3
+                                                      Fig6. ECG Hiperventilación DII toma 3
 ### ECG Basal 2 DI
 <img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_024453049.png" />
                                                                           
                                                                               
-                                                            Fig2. ECG Basal 2 DI
+                                                            Fig7. ECG Basal 2 DI
 ### ECG Basal 2 DII
 <img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_025230649.png" />
                                                                           
                                                                               
-                                                            Fig2. ECG Basal 2 DII
+                                                            Fig8. ECG Basal 2 DII
 ### ECG Basal 2 DIII
 <img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_025508778.png" />
                                                                           
                                                                               
-                                                            Fig2. ECG Basal 2 DIII
+                                                            Fig9. ECG Basal 2 DIII
+### ECG Burpees DII
+<img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_025705373.png" />
+                                                                          
+                                                                              
+                                                            Fig10. ECG Burpees DII
 ---
 
 ## Análisis de resultados
