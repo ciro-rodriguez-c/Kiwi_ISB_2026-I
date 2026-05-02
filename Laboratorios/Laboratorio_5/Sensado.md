@@ -146,7 +146,7 @@ La causa fundamental para esta diferencia es la distancia respecto al corazón y
 <img width="1553" height="525" alt="imagen" src="https://github.com/user-attachments/assets/25e8e3a6-e20d-462d-9f99-5c10f59147bd" />
                                                                           
                                                                               
-    Fig1. Señal correspondiente al estado de Hiperventilación
+                                    Fig1. Señal correspondiente al estado de Hiperventilación
 
 <img width="1510" height="477" alt="imagen" src="https://github.com/user-attachments/assets/ef8551c2-035c-4408-8d44-9bf95ea66739" />
 
