@@ -55,6 +55,13 @@ El corazón genera señales eléctricas durante la despolarización y repolariza
 
 Generalmente, la derivación II suele mostrar una señal más clara y de mayor amplitud, porque su dirección se parece más al eje eléctrico normal del corazón, especialmente durante la despolarización ventricular.
 
+| Componente | ¿Cómo puede cambiar? |
+|---|---|
+| Onda P | Puede verse más grande, más pequeña o menos clara. |
+| Complejo QRS | Puede aumentar o disminuir su amplitud, o incluso verse más negativo. |
+| Onda T | Puede cambiar su tamaño o su polaridad. |
+| Línea base | Puede variar si cambia el contacto del electrodo o hay movimiento. |
+
 La idea principal es que si la actividad eléctrica se dirige hacia el electrodo positivo, la onda se ve positiva. Si se aleja del electrodo positivo, la onda se ve negativa. Y si la actividad eléctrica va casi perpendicular a la derivación, la amplitud de la onda se reduce.
 
 En conclusión, las  derivaciones **I, II y III** registran la misma actividad cardíaca, pero desde diferentes puntos de vista. Por eso, al cambiar la posición de los sensores, cambian principalmente la **amplitud**, la **polaridad** y la **forma** de las ondas **P**, **QRS** y **T**.
