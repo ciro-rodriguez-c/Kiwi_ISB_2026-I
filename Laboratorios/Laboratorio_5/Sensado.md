@@ -110,6 +110,11 @@ El formato de cada figura es el siguiente: Gráfica Amplitud vs tiempo (lado izq
                                                                           
                                                                               
                                                             Fig10. ECG Burpees DII
+### ECG Burpees DI
+<img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_030030830.png" />
+                                                                          
+                                                                              
+                                                            Fig11. ECG Burpees DI
 ---
 
 ## Análisis de resultados
