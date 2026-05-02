@@ -14,7 +14,9 @@ Además, es importante considerar que la señal fue registrada en una persona se
 
 ### Ciclo de inhalacion-contencion-exhalacion
 
-b
+Los resultados muestran que las señales EKG registradas durante hiperventilación conservan complejos QRS identificables después del filtrado, pero presentan mayor variabilidad que una señal basal. Esto es esperable porque, durante la hiperventilación, la respiración se vuelve más rápida y profunda, generando movimiento torácico, cambios en la línea base y posibles alteraciones en el contacto de los electrodos del BITalino.
+
+Entre los tres registros, HV D2_1 presenta una señal relativamente clara con artefactos puntuales, HV D2_2 muestra la mayor variabilidad y una fuerte presencia de componentes de baja frecuencia, mientras que HV D2_3 tiene una señal más estable y con complejos QRS bien definidos. En conjunto, los resultados reflejan una condición respiratoria activa, diferente al reposo basal.
 
 ### Segunda señal basal
 
