@@ -30,7 +30,7 @@ e
 ### Q1. What are the most typical types of noise sources affecting ECG?
 
 * **Interferencia de la red eléctrica:**  
-  Proviene de la corriente eléctrica del ambiente, normalmente de **50 Hz o 60 Hz**, dependiendo del país. Puede aparecer por cables, equipos eléctricos cercanos o una mala conexión a tierra.
+  Proviene de la corriente eléctrica del ambiente, normalmente es de 60 Hz en el Perú. Puede aparecer por cables, equipos eléctricos cercanos o una mala conexión a tierra.
 
 * **Ruido por movimiento del paciente:**  
   Ocurre cuando el paciente se mueve durante el registro. Esto puede alterar el contacto entre los electrodos y la piel, generando cambios bruscos o distorsiones en la señal ECG.
