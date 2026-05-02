@@ -8,7 +8,9 @@ Adicionalmente, se analizaron la primera, segunda y tercera derivada de la seña
 ## Análisis de resultados
 ### Señal basal
 
-a
+Los resultados muestran que el filtrado aplicado logra limpiar la señal EKG y conservar sus componentes principales. En los tres registros se identifican complejos QRS claros y una concentración de energía principalmente en bajas frecuencias, lo cual es coherente con una señal electrocardiográfica en condición basal.
+
+Además, es importante considerar que la señal fue registrada en una persona sentada, relajada, sin actividad física previa y medida mediante un sistema BITalino. Por ello, se esperaba observar una señal relativamente estable, con un ritmo cardíaco sin grandes variaciones bruscas asociadas al esfuerzo físico. En este contexto, D1 presenta menor amplitud y menor energía, mientras que D2 y D3 muestran picos QRS más pronunciados y mayor potencia en el rango aproximado de 5 a 20 Hz. D3 parece ser el registro más regular visualmente, mientras que D2 muestra mayor variabilidad y algunos picos más intensos.
 
 ### Ciclo de inhalacion-contencion-exhalacion
 
