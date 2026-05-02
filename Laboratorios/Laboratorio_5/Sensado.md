@@ -22,7 +22,9 @@ c
 
 ### Actividad física (Burpees)
 
-d
+Los resultados muestran que las señales EKG registradas después de realizar burpees presentan una respuesta compatible con actividad física intensa: mayor frecuencia de complejos QRS, mayor amplitud en algunos registros y mayor contenido frecuencial en comparación con una condición basal de reposo. Esto es esperable porque, luego del ejercicio, el sistema cardiovascular incrementa su actividad para responder a la mayor demanda de oxígeno del cuerpo.
+
+En los tres registros se observa que el filtrado aplicado permitió mejorar la visualización de la señal y conservar los componentes principales del EKG. Burpees D1 muestra una señal clara y con frecuencias dominantes identificables alrededor de 2.5, 5, 10 y 16 Hz. Burpees D2 presenta mayor variabilidad y posibles artefactos, mientras que Burpees D3 muestra picos QRS bastante marcados y regulares. En conjunto, los resultados reflejan adecuadamente una señal cardíaca posterior al ejercicio, medida con BITalino, donde la persona ya no se encontraba en reposo sino bajo los efectos fisiológicos de una actividad física previa.
 
 ### Contención de respiración
 e
