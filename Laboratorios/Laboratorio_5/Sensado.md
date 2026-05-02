@@ -5,12 +5,22 @@ Adicionalmente, se analizaron la primera, segunda y tercera derivada de la seña
 
 ---
 
+## Metodología
+
+La metodología experimetnal de la presenta experiencia consistió en la adquisición de señales ECG mediante las derivaciones bipolares estándar (DI, DII, DIII) en un voluntario, para el caso particular se escogió un varón de 21 años con actividad física regular. Para las mediciones se colocaron 3 electrodos, uno en cada brazo y uno en la región inferior del torso, esta configuración es una adaptación del triángulo de Einthoven para el registro de las señales, dado que por las limitaciones en la longitud de los cables de sensado no fue posible ubicar el electrodo en la pierna izquierda; en su lugar, fue colocado en la región de la cadera/abdomen inferior. Dicha configuración modificada mantienene validez con el registro electrocardiográfico [1].
+
+En primera instancia, se realizaron mediciones basales de 30 segundos en cada derivación en estado de reposo. Posteriormente, se registraron las señales de la derivación DII y DIII durante un periodo de hiperventilación de 30 segundos con intervalos de descanso de 2 minutos entre cada ciclo (3 mediciones por derivación). Luego, se efectuó una segunda medición basal de 30 segundos de cada derivación. Siguiendo, el voluntario realizó una actividad física intensa, burpees, durante 4 minutos, tras la cual se registraron las derivaciones en el orden DII, DI y DII (30 segundos cada una), priorizando la derivación DII por presentar la mayor claridad para el análisis del ritmo (siendo DI y DIII complementarias) [1]. Finalmente se realizó un ultimo Registro en las derivaciones DII y DIII durante un periodo de aguante de respiración voluntaria de 30 segundos.
+
+El procesamiento de señales se realizó mediante el uso de MATLAB, con el objetivo de eliminar el ruido de la señal y mejorar su calidad para su análisis posterior. Se realizó el mismo procedimiento para todas las señales adquiridas. Iniciando, se eliminó el componente DC con el fin de centrarla alrededor de 0. Posteriormente, se aplicó un primer filtro pasa altas Butterworth de segundo orden con una frecuencia de cort de 0.5 Hz, con el objetivo de remover la derivación de la linea base de la señal (cual se presenta como una señal de frecuencia sumamente baja -menor al valor determinado- que alza o baja la señal de manera no deseada) [2]. Siguiendo, se aplicó un segundo filtro Butterworth de segundo orden, esta vez siendo un pasa banda en el rango 1 - 45 Hz, con el objetivo de conservar el contenido espectrar de interes del ECG y atenuar los componente de ruido de alta frecuencia no deseados. Finalmente, a esta señal filtrada se le aplicó la Transformada Rápida de Fourier (FFT) para obtener su representación en el dominió de la frecuenicia. Este procesamiento es consistente con los enfoques estándar de acondicionamiento de señales ECG, los cuales buscan mejorar la relación señal-ruido y facilitar la extracción de información relevante [2]. 
+
+---
+
 ## Análisis de resultados
 ### Señal basal
 
 Los resultados muestran que el filtrado aplicado logra limpiar la señal EKG y conservar sus componentes principales. En los tres registros se identifican complejos QRS claros y una concentración de energía principalmente en bajas frecuencias, lo cual es coherente con una señal electrocardiográfica en condición basal.
 
-Además, es importante considerar que la señal fue registrada en una persona sentada, relajada, sin actividad física previa y medida mediante un sistema BITalino. Por ello, se esperaba observar una señal relativamente estable, con un ritmo cardíaco sin grandes variaciones bruscas asociadas al esfuerzo físico. En este contexto, D1 presenta menor amplitud y menor energía, mientras que D2 y D3 muestran picos QRS más pronunciados y mayor potencia en el rango aproximado de 5 a 20 Hz. D3 parece ser el registro más regular visualmente, mientras que D2 muestra mayor variabilidad y algunos picos más intensos.
+Además, es importante considerar que la señal fue registrada en una persona sentada, relajada, sin actividad física previa y medida mediante un sistema BITalino. Por ello, se esperaba observar una señal relativamente estable, con un ritmo cardíaco sin grandes variaciones bruscas asociadas al esfuerzo físico. En este contexto, D1 presenta menor amplitud y menor energía, mientras que DII y DIII muestran picos QRS más pronunciados y mayor potencia en el rango aproximado de 5 a 20 Hz. DIII parece ser el registro más regular visualmente, mientras que D2 muestra mayor variabilidad y algunos picos más intensos.
 
 ### Ciclo de inhalacion-contencion-exhalacion
 
@@ -45,33 +55,33 @@ En conjunto, el resultado es coherente con una prueba de apnea breve o retenció
 ## Homeguide
 ### Q1. What are the most typical types of noise sources affecting ECG?
 
-Los tipos más comunes de ruido que afectan una señal ECG son la interferencia de la red eléctrica, la deriva de la línea base, el ruido muscular o electromiográfico, los artefactos por movimiento, el mal contacto de los electrodos y el ruido propio del sistema de adquisición. Estos ruidos son importantes porque pueden distorsionar la morfología del ECG y dificultar la detección correcta de los complejos cardíacos, especialmente el complejo QRS [1]-[3].
+Los tipos más comunes de ruido que afectan una señal ECG son la interferencia de la red eléctrica, la deriva de la línea base, el ruido muscular o electromiográfico, los artefactos por movimiento, el mal contacto de los electrodos y el ruido propio del sistema de adquisición. Estos ruidos son importantes porque pueden distorsionar la morfología del ECG y dificultar la detección correcta de los complejos cardíacos, especialmente el complejo QRS [3]-[5].
 
 * **Interferencia de la red eléctrica:**  
-  Proviene de la corriente eléctrica del ambiente. En Perú, la red eléctrica trabaja normalmente a **60 Hz**, por lo que esta interferencia puede aparecer alrededor de esa frecuencia. Puede generarse por cables, equipos eléctricos cercanos o una mala conexión a tierra [1].
+  Proviene de la corriente eléctrica del ambiente. En Perú, la red eléctrica trabaja normalmente a **60 Hz**, por lo que esta interferencia puede aparecer alrededor de esa frecuencia. Puede generarse por cables, equipos eléctricos cercanos o una mala conexión a tierra [3].
 
 * **Ruido por movimiento del paciente:**  
-  Ocurre cuando el paciente se mueve durante el registro. Esto puede modificar el contacto entre los electrodos y la piel, generando cambios bruscos, desplazamientos de la línea base o distorsiones en la señal ECG [2], [3].
+  Ocurre cuando el paciente se mueve durante el registro. Esto puede modificar el contacto entre los electrodos y la piel, generando cambios bruscos, desplazamientos de la línea base o distorsiones en la señal ECG [4], [5].
 
 * **Ruido por mal contacto de los electrodos:**  
-  Se produce cuando los electrodos no están bien colocados, la piel no fue preparada adecuadamente o hay sudor, vello o grasa. Esto cambia la impedancia piel-electrodo y puede causar una señal inestable o con artefactos [2], [3].
+  Se produce cuando los electrodos no están bien colocados, la piel no fue preparada adecuadamente o hay sudor, vello o grasa. Esto cambia la impedancia piel-electrodo y puede causar una señal inestable o con artefactos [4], [5].
 
 * **Interferencia muscular o electromiográfica:**  
-  Aparece cuando los músculos del paciente se contraen, por ejemplo, si está tenso, temblando o hablando. Esta actividad eléctrica muscular puede mezclarse con la señal cardíaca y producir ruido de mayor frecuencia [1]-[3].
+  Aparece cuando los músculos del paciente se contraen, por ejemplo, si está tenso, temblando o hablando. Esta actividad eléctrica muscular puede mezclarse con la señal cardíaca y producir ruido de mayor frecuencia [3]-[5].
 
 * **Deriva de la línea base:**  
-  Es una variación lenta de la señal ECG. Generalmente se debe a la respiración, movimientos del cuerpo o cambios en la impedancia entre la piel y el electrodo [1], [2].
+  Es una variación lenta de la señal ECG. Generalmente se debe a la respiración, movimientos del cuerpo o cambios en la impedancia entre la piel y el electrodo [3], [4].
 
 * **Ruido del equipo o ruido electrónico interno:**  
-  Puede originarse en los componentes del sistema de adquisición, como amplificadores, cables, sensores o conversores analógico-digitales. Aunque suele ser menor, también puede afectar la calidad de la señal ECG [1]-[3].
+  Puede originarse en los componentes del sistema de adquisición, como amplificadores, cables, sensores o conversores analógico-digitales. Aunque suele ser menor, también puede afectar la calidad de la señal ECG [3]-[5].
 
 ### Q2. Why does the change of the positioning of the sensors (lead I-III) change the ECG signal components? How do the components change?
 
-Cambiar la posición de los sensores en las derivaciones **I, II y III** cambia los componentes de la señal ECG porque cada derivación registra la actividad eléctrica del corazón desde una dirección distinta. Las derivaciones I, II y III son derivaciones bipolares de las extremidades, es decir, miden diferencias de potencial eléctrico entre dos electrodos ubicados en distintas posiciones del cuerpo [4]-[6].
+Cambiar la posición de los sensores en las derivaciones **I, II y III** cambia los componentes de la señal ECG porque cada derivación registra la actividad eléctrica del corazón desde una dirección distinta. Las derivaciones I, II y III son derivaciones bipolares de las extremidades, es decir, miden diferencias de potencial eléctrico entre dos electrodos ubicados en distintas posiciones del cuerpo [6]-[8].
 
-El corazón genera señales eléctricas durante la despolarización y repolarización. Sin embargo, cada derivación no registra toda la actividad eléctrica de la misma forma, sino la proyección del vector eléctrico cardíaco sobre el eje de esa derivación. Por eso, al cambiar de una derivación a otra, también cambia la forma en que se observan las ondas P, QRS y T [6], [7].
+El corazón genera señales eléctricas durante la despolarización y repolarización. Sin embargo, cada derivación no registra toda la actividad eléctrica de la misma forma, sino la proyección del vector eléctrico cardíaco sobre el eje de esa derivación. Por eso, al cambiar de una derivación a otra, también cambia la forma en que se observan las ondas P, QRS y T [8], [9].
 
-Generalmente, la derivación II suele mostrar una señal más clara y de mayor amplitud porque su dirección se parece más al eje eléctrico normal del corazón durante la despolarización ventricular. Además, si la actividad eléctrica se dirige hacia el electrodo positivo, la onda se observa positiva; si se aleja, se observa negativa; y si el vector eléctrico va casi perpendicular al eje de la derivación, la amplitud registrada disminuye [4]-[8].
+Generalmente, la derivación II suele mostrar una señal más clara y de mayor amplitud porque su dirección se parece más al eje eléctrico normal del corazón durante la despolarización ventricular. Además, si la actividad eléctrica se dirige hacia el electrodo positivo, la onda se observa positiva; si se aleja, se observa negativa; y si el vector eléctrico va casi perpendicular al eje de la derivación, la amplitud registrada disminuye [6]-[10].
 
 | Componente | ¿Cómo puede cambiar? |
 |---|---|
@@ -83,9 +93,9 @@ Generalmente, la derivación II suele mostrar una señal más clara y de mayor a
 En conclusión, las derivaciones **I, II y III** registran la misma actividad cardíaca, pero desde diferentes puntos de vista. Por eso, al cambiar la posición de los sensores, cambian principalmente la **amplitud**, la **polaridad** y la **forma** de las ondas **P**, **QRS** y **T**.
 
 ### Q3. Describe if there are major differences in the signal when acquiring the signal from different body locations (e.g., wrist / collarbone/ chest). What could be the cause? Did you expect such changes in the signal? Store a signal segment of each to visualize the differences
-Las señales capturadas en el pecho muestran amplitudes mucho más altas en comparación con las obtenidas en la muñeca o extremidades. Esto se debe a que los electrodos están físicamente más cerca de la fuente de activación eléctrica cardíaca [11]. Respecto a la calidad de la señal, la relación señal-ruido es superior en la clavícula y el pecho. La muñeca presenta una alta susceptibilidad a los artefactos por movimiento y una mayor resistencia eléctrica debido al trayecto que la señal debe recorrer a través de diversos tejidos [12].
+Las señales capturadas en el pecho muestran amplitudes mucho más altas en comparación con las obtenidas en la muñeca o extremidades. Esto se debe a que los electrodos están físicamente más cerca de la fuente de activación eléctrica cardíaca [13]. Respecto a la calidad de la señal, la relación señal-ruido es superior en la clavícula y el pecho. La muñeca presenta una alta susceptibilidad a los artefactos por movimiento y una mayor resistencia eléctrica debido al trayecto que la señal debe recorrer a través de diversos tejidos [14].
 
-La causa fundamental para esta diferencia es la distancia respecto al corazón y el fenómeno del conductor de volumen. Conforme la señal eléctrica se propaga por el cuerpo, atraviesa capas de piel, músculo y hueso que actúan atenuando la amplitud 11]. Estos cambios son esperados puesto que el vector eléctrico del corazón se proyecta con mayor intensidad en las derivaciones cercanas al torso, y la proximidad física reduce la cantidad de ruido captado durante la trayectoria [12].
+La causa fundamental para esta diferencia es la distancia respecto al corazón y el fenómeno del conductor de volumen. Conforme la señal eléctrica se propaga por el cuerpo, atraviesa capas de piel, músculo y hueso que actúan atenuando la amplitud 11]. Estos cambios son esperados puesto que el vector eléctrico del corazón se proyecta con mayor intensidad en las derivaciones cercanas al torso, y la proximidad física reduce la cantidad de ruido captado durante la trayectoria [14].
 
 ### Q4. The cardiac and the respiratory systems are well interconnected as is well known. Do you expect that different types of breathing (e.g. faster, deeper) to influence the ECG signals? Show screenshots of ECG signals in different respiratory circumstances and described the variations if there are any.
 
@@ -100,40 +110,44 @@ La causa fundamental para esta diferencia es la distancia respecto al corazón y
                                                                               Fig2. Señal correspondiente al estado basal
 
                       
-En las señales correspondientes a la hiperventilación, se observa que la respiración rápida y profunda altera significativamente los intervalos R-R. Este fenómeno se conoce como Arritmia Sinusal Respiratoria [10]. Durante la fase de inhalación, la frecuencia cardíaca tiende a aumentar, lo que resulta en intervalos R-R más cortos. Por el contrario, durante la exhalación, la frecuencia disminuye y los intervalos se alargan. Adicionalmente, el movimiento mecánico del tórax durante la respiración profunda introduce un balanceo en la línea base (baseline wander) debido a las variaciones en la impedancia entre el electrodo y la piel [12].
+En las señales correspondientes a la hiperventilación, se observa que la respiración rápida y profunda altera significativamente los intervalos R-R. Este fenómeno se conoce como Arritmia Sinusal Respiratoria [12]. Durante la fase de inhalación, la frecuencia cardíaca tiende a aumentar, lo que resulta en intervalos R-R más cortos. Por el contrario, durante la exhalación, la frecuencia disminuye y los intervalos se alargan. Adicionalmente, el movimiento mecánico del tórax durante la respiración profunda introduce un balanceo en la línea base (baseline wander) debido a las variaciones en la impedancia entre el electrodo y la piel [14].
 ### Q5. In Home-Guide #1 you have seen that different amounts of force produced in the muscle generated signals with different amplitudes. How does movement influence your ECG signal?
-Las señales correspondientes a la actividad de burpees muestran una interferencia de alta frecuencia muy marcada. Esto ocurre porque los músculos esqueléticos involucrados en el movimiento generan sus propios potenciales de acción eléctricos (electromiografía o EMG) [12]. Esta actividad muscular se superpone al ECG, creando un ruido que puede ocultar componentes clave como la onda P o la onda T [10]. Para corregir esto, el procesamiento digital utiliza un filtro de banda de 1 a 45 Hz. Al eliminar las frecuencias por encima de 45 Hz se descarta el ruido muscular, mientras que el corte inferior a 1 Hz estabiliza la línea base que se ve afectada por el movimiento de los cables y el cuerpo [12].
-Para determinar estas condiciones en la señal, se realiza el cálculo de la frecuencia cardíaca mediante la identificación de los picos R siguiendo este procedimiento [10]:
+Las señales correspondientes a la actividad de burpees muestran una interferencia de alta frecuencia muy marcada. Esto ocurre porque los músculos esqueléticos involucrados en el movimiento generan sus propios potenciales de acción eléctricos (electromiografía o EMG) [14]. Esta actividad muscular se superpone al ECG, creando un ruido que puede ocultar componentes clave como la onda P o la onda T [12]. Para corregir esto, el procesamiento digital utiliza un filtro de banda de 1 a 45 Hz. Al eliminar las frecuencias por encima de 45 Hz se descarta el ruido muscular, mientras que el corte inferior a 1 Hz estabiliza la línea base que se ve afectada por el movimiento de los cables y el cuerpo [14].
+Para determinar estas condiciones en la señal, se realiza el cálculo de la frecuencia cardíaca mediante la identificación de los picos R siguiendo este procedimiento [12]:
 
 1. Detección de picos R: Se localizan los tiempos exactos de dos ondas R consecutivas, denominadas R1 y R2.
 2. Cálculo del intervalo R-R: Se obtiene la diferencia temporal entre ambos puntos mediante la resta Delta T = R2 - R1.
 3. Obtención de la frecuencia cardíaca: Se aplica la fórmula para convertir el tiempo a latidos por minuto (BPM): FC = 60 / Delta T.
 
 
-Se identifica taquicardia cuando la frecuencia cardíaca es superior a 100 BPM de forma sostenida [10]. Se identifica bradicardia si la frecuencia es inferior a 60 BPM, situación que suele presentarse en los datos en estado basal si el sujeto se encuentra en reposo absoluto o posee un alto nivel de entrenamiento físico [9].
+Se identifica taquicardia cuando la frecuencia cardíaca es superior a 100 BPM de forma sostenida [12]. Se identifica bradicardia si la frecuencia es inferior a 60 BPM, situación que suele presentarse en los datos en estado basal si el sujeto se encuentra en reposo absoluto o posee un alto nivel de entrenamiento físico [11].
 
 ---
 ## Bibliografía
 
-[1] S. M. Qaisar, L. Fesquet, and M. Renaudin, “Baseline wander and power-line interference elimination of ECG signals using efficient signal-piloted filtering,” *Healthcare Technology Letters*, vol. 7, no. 4, pp. 114–118, 2020. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC7494370/
+[1] A. C. Guyton y J. E. Hall, Textbook of Medical Physiology, 14th ed. Philadelphia, PA, USA: Elsevier, 2021.
 
-[2] H. Li, X. Wang, L. Chen, and E. Sejdić, “An Automatic Method to Reduce Baseline Wander and Motion Artifacts in Ambulatory ECG,” *Sensors*, vol. 21, no. 24, 2021. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC8708403/
+[2] L. Sörnmo and P. Laguna, “Electrocardiogram (ECG) Signal Processing,” Wiley Encyclopedia of Biomedical Engineering, 2006.
 
-[3] F. A. Ghaleb, M. B. Kamat, M. N. M. Saad, and A. R. M. Sidek, “Two-stage motion artefact reduction algorithm for electrocardiogram using weighted adaptive noise cancelling and recursive Hampel filter,” *PLOS ONE*, vol. 13, no. 11, 2018. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC6245678/
+[3] S. M. Qaisar, L. Fesquet, and M. Renaudin, “Baseline wander and power-line interference elimination of ECG signals using efficient signal-piloted filtering,” *Healthcare Technology Letters*, vol. 7, no. 4, pp. 114–118, 2020. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC7494370/
 
-[4] Y. Sattar and L. Chhabra, “Electrocardiogram,” *StatPearls*, National Library of Medicine, 2023. Disponible en: https://www.ncbi.nlm.nih.gov/books/NBK549803/
+[4] H. Li, X. Wang, L. Chen, and E. Sejdić, “An Automatic Method to Reduce Baseline Wander and Motion Artifacts in Ambulatory ECG,” *Sensors*, vol. 21, no. 24, 2021. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC8708403/
 
-[5] J. R. Hampton and D. Adlam, “Conquering the ECG,” *Cardiology Explained*, National Library of Medicine. Disponible en: https://www.ncbi.nlm.nih.gov/books/NBK2214/
+[5] F. A. Ghaleb, M. B. Kamat, M. N. M. Saad, and A. R. M. Sidek, “Two-stage motion artefact reduction algorithm for electrocardiogram using weighted adaptive noise cancelling and recursive Hampel filter,” *PLOS ONE*, vol. 13, no. 11, 2018. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC6245678/
 
-[6] B. E. Jin, A. W. Wulff, and J. S. Wakai, “A simple device to illustrate the Einthoven triangle,” *Advances in Physiology Education*, vol. 37, no. 4, pp. 341–345, 2013. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC3776430/
+[6] Y. Sattar and L. Chhabra, “Electrocardiogram,” *StatPearls*, National Library of Medicine, 2023. Disponible en: https://www.ncbi.nlm.nih.gov/books/NBK549803/
 
-[7] G. D. Gargiulo *et al*., “On the Einthoven Triangle: A Critical Analysis of the Single Rotating Dipole Hypothesis,” *Sensors*, vol. 18, no. 7, 2018. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC6068749/
+[7] J. R. Hampton and D. Adlam, “Conquering the ECG,” *Cardiology Explained*, National Library of Medicine. Disponible en: https://www.ncbi.nlm.nih.gov/books/NBK2214/
 
-[8] M. AlGhatrif and J. Lindsay, “A brief review: history to understand fundamentals of electrocardiography,” *Journal of Community Hospital Internal Medicine Perspectives*, vol. 2, no. 1, 2012. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC3714093/
-[9] F. M. Kusumoto et al., "2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Rhythm Society," Circulation, vol. 140, no. 8, pp. e382-e482, ago. 2019.
+[8] B. E. Jin, A. W. Wulff, and J. S. Wakai, “A simple device to illustrate the Einthoven triangle,” *Advances in Physiology Education*, vol. 37, no. 4, pp. 341–345, 2013. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC3776430/
 
-[10] A. L. Goldberger, Z. D. Goldberger, y A. Shvilkin, Goldberger's Clinical Electrocardiography: A Simplified Approach, 9.a ed. Filadelfia, PA, EE. UU.: Elsevier, 2017.
+[9] G. D. Gargiulo *et al*., “On the Einthoven Triangle: A Critical Analysis of the Single Rotating Dipole Hypothesis,” *Sensors*, vol. 18, no. 7, 2018. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC6068749/
 
-[11] J. Malmivuo y R. Plonsey, Bioelectromagnetism: Principles and Applications of Bioelectric and Biomagnetic Fields. Nueva York, NY, EE. UU.: Oxford University Press, 1995.
+[10] M. AlGhatrif and J. Lindsay, “A brief review: history to understand fundamentals of electrocardiography,” *Journal of Community Hospital Internal Medicine Perspectives*, vol. 2, no. 1, 2012. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC3714093/
+[11] F. M. Kusumoto et al., "2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Rhythm Society," Circulation, vol. 140, no. 8, pp. e382-e482, ago. 2019.
 
-[12] J. G. Webster, Medical Instrumentation: Application and Design, 4.a ed. Hoboken, NJ, EE. UU.: John Wiley & Sons, 2009.
+[12] A. L. Goldberger, Z. D. Goldberger, y A. Shvilkin, Goldberger's Clinical Electrocardiography: A Simplified Approach, 9.a ed. Filadelfia, PA, EE. UU.: Elsevier, 2017.
+
+[13] J. Malmivuo y R. Plonsey, Bioelectromagnetism: Principles and Applications of Bioelectric and Biomagnetic Fields. Nueva York, NY, EE. UU.: Oxford University Press, 1995.
+
+[14] J. G. Webster, Medical Instrumentation: Application and Design, 4.a ed. Hoboken, NJ, EE. UU.: John Wiley & Sons, 2009.
