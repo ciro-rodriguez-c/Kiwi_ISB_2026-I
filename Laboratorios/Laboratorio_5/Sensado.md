@@ -64,7 +64,11 @@ El formato de cada figura es el siguiente: Gráfica Amplitud vs tiempo (lado izq
                                                                           
                                                                               
                                                             Fig1. ECG Basal DI
-
+### ECG Basal DII
+<img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_014503498.png" />
+                                                                          
+                                                                              
+                                                            Fig2. ECG Basal DII
 ---
 
 ## Análisis de resultados
