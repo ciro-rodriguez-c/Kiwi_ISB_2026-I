@@ -70,11 +70,16 @@ El formato de cada figura es el siguiente: Gráfica Amplitud vs tiempo (lado izq
                                                                               
                                                             Fig2. ECG Basal DII
 
+### ECG Basal DIII
+<img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_023207133.png" />
+                                                                          
+                                                                              
+                                                            Fig2. ECG Basal DIII
 ### ECG Hiperventilación DII toma 1
 <img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_5/images/imagen_2026-05-02_022739947.png" />
                                                                           
                                                                               
-                                                            Fig4. ECG Hiperventilación DII toma 1
+                                                      Fig4. ECG Hiperventilación DII toma 1
 ---
 
 ## Análisis de resultados
