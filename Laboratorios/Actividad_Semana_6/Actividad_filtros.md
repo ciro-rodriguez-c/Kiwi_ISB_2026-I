@@ -64,6 +64,27 @@ Es versátil para implementar como tipo de filtro pasa-bajos, pasa-altos, pasa-b
 Las frecuencias atenuadas por el filtro Butterworth dependen del rango fisiológico esperado de la señal biomédica analizada [15]. En ECG, por ejemplo, suele preservarse el contenido entre 0.5 Hz y 40 Hz, mientras que componentes inferiores pueden asociarse a variaciones lentas de línea base y componentes superiores a ruido muscular o electrónico. De manera similar, en EEG y EMG se seleccionan distintas bandas de frecuencia según las características fisiológicas de cada señal [16]. 
 
 
+## Filtro adaptativo:
+
+Puede ajustar automáticamente sus parámetros según las características del ruido presente en la señal [17]. Esto resulta especialmente útil en señales biomédicas como ECG, EEG y EMG, ya que contienen ruidos variables y no estacionarios que cambian con el tiempo [18].
+
+### Importancia
+
+Los filtros adaptativos modifican su respuesta en tiempo real para minimizar el error entre la señal original y la señal filtrada [17]. Entre los algoritmos más utilizados destacan LMS (Least Mean Squares), NLMS (Normalized LMS) y RLS (Recursive Least Squares).
+
+Este tipo de filtros es ampliamente utilizado en procesamiento biomédico porque permite reducir interferencias sin alterar significativamente la morfología original de la señal, algo importante para realizar un análisis clínico adecuado [18]. Además, presentan buen desempeño frente a ruidos dinámicos como interferencia de línea eléctrica, artefactos de movimiento y contaminación muscular.
+
+### Tipo de ruido que elimina y sus frecuencias
+
+Uno de los principales ruidos que eliminan los filtros adaptativos es la interferencia de línea eléctrica, la cual suele aparecer a 50 Hz o 60 Hz (depende del país) [18]. También pueden presentarse armónicos en 100 Hz y 120 Hz debido a dispositivos eléctricos cercanos, cables de alimentación o interferencia electromagnética.
+
+En señales ECG, este ruido puede afectar la identificación correcta de complejos QRS y otras características importantes de la señal cardíaca. Los filtros adaptativos ayudan a reducir esta interferencia sin distorsionar significativamente la señal [17].
+
+Asimismo, estos filtros también ayudan a disminuir artefactos de movimiento, los cuales suelen encontrarse en bajas frecuencias, generalmente menores a 20 Hz [19]. Estos artefactos aparecen por movimiento del paciente, desplazamiento de electrodos o cambios en el contacto piel-electrodo.
+
+Otra aplicación importante es la reducción de contaminación muscular en señales EEG y ECG. Las señales musculares EMG suelen encontrarse aproximadamente entre 20 Hz y 300 Hz, e incluso pueden extenderse hasta 500 Hz dependiendo del tipo de contracción muscular [20]. Debido a esto, la actividad muscular puede superponerse sobre señales cerebrales o cardíacas y dificultar su análisis.
+
+
 ## Referencias Bibliográficas (Formato IEEE):
 
 
@@ -99,33 +120,10 @@ Las frecuencias atenuadas por el filtro Butterworth dependen del rango fisiológ
 
 [16] Y. Luo et al., “Butterworth Low-Pass Filter Applications in Physiological Signal Processing,” *Sensors*, vol. 20, no. 24, 2020. [Online]. Available: https://www.mdpi.com/1424-8220/20/24/7343
 
+[17] P. S. Hamilton, “A comparison of adaptive and nonadaptive filters for reduction of power line interference in the ECG,” IEEE Transactions on Biomedical Engineering, vol. 43, no. 1, pp. 105–109, Jan. 1996.
 
-## Filtro adaptativo:
+[18] C. Levkov et al., “Removal of power-line interference from the ECG: A review of the subtraction procedure,” BioMedical Engineering Online, vol. 4, no. 50, 2005.
 
-Puede ajustar automáticamente sus parámetros según las características del ruido presente en la señal [1]. Esto resulta especialmente útil en señales biomédicas como ECG, EEG y EMG, ya que contienen ruidos variables y no estacionarios que cambian con el tiempo [2].
+[19] G. D. Clifford, F. Azuaje, and P. McSharry, Advanced Methods and Tools for ECG Data Analysis. Norwood, MA, USA: Artech House, 2006.
 
-### Importancia
-
-Los filtros adaptativos modifican su respuesta en tiempo real para minimizar el error entre la señal original y la señal filtrada [1]. Entre los algoritmos más utilizados destacan LMS (Least Mean Squares), NLMS (Normalized LMS) y RLS (Recursive Least Squares).
-
-Este tipo de filtros es ampliamente utilizado en procesamiento biomédico porque permite reducir interferencias sin alterar significativamente la morfología original de la señal, algo importante para realizar un análisis clínico adecuado [2]. Además, presentan buen desempeño frente a ruidos dinámicos como interferencia de línea eléctrica, artefactos de movimiento y contaminación muscular.
-
-### Tipo de ruido que elimina y sus frecuencias
-
-Uno de los principales ruidos que eliminan los filtros adaptativos es la interferencia de línea eléctrica, la cual suele aparecer a 50 Hz o 60 Hz (depende del país) [2]. También pueden presentarse armónicos en 100 Hz y 120 Hz debido a dispositivos eléctricos cercanos, cables de alimentación o interferencia electromagnética.
-
-En señales ECG, este ruido puede afectar la identificación correcta de complejos QRS y otras características importantes de la señal cardíaca. Los filtros adaptativos ayudan a reducir esta interferencia sin distorsionar significativamente la señal [1].
-
-Asimismo, estos filtros también ayudan a disminuir artefactos de movimiento, los cuales suelen encontrarse en bajas frecuencias, generalmente menores a 20 Hz [3]. Estos artefactos aparecen por movimiento del paciente, desplazamiento de electrodos o cambios en el contacto piel-electrodo.
-
-Otra aplicación importante es la reducción de contaminación muscular en señales EEG y ECG. Las señales musculares EMG suelen encontrarse aproximadamente entre 20 Hz y 300 Hz, e incluso pueden extenderse hasta 500 Hz dependiendo del tipo de contracción muscular [4]. Debido a esto, la actividad muscular puede superponerse sobre señales cerebrales o cardíacas y dificultar su análisis.
-
-## Referencias Bibliográficas (Formato IEEE):
-
-[1] P. S. Hamilton, “A comparison of adaptive and nonadaptive filters for reduction of power line interference in the ECG,” IEEE Transactions on Biomedical Engineering, vol. 43, no. 1, pp. 105–109, Jan. 1996.
-
-[2] C. Levkov et al., “Removal of power-line interference from the ECG: A review of the subtraction procedure,” BioMedical Engineering Online, vol. 4, no. 50, 2005.
-
-[3] G. D. Clifford, F. Azuaje, and P. McSharry, Advanced Methods and Tools for ECG Data Analysis. Norwood, MA, USA: Artech House, 2006.
-
-[4] A. Phinyomark, P. Phukpattaranont, and C. Limsakul, “Feature reduction and selection for EMG signal classification,” Expert Systems with Applications, vol. 39, no. 8, pp. 7420–7431, 2012.
+[20] A. Phinyomark, P. Phukpattaranont, and C. Limsakul, “Feature reduction and selection for EMG signal classification,” Expert Systems with Applications, vol. 39, no. 8, pp. 7420–7431, 2012.
