@@ -1,3 +1,5 @@
+# Filtros Digitales para Señales Biomédicas: EEG, ECG, EMG
+
 ## Filtro de Wavelet:
 
 El Filtro de Wavelet permite un análisis de tiempo-frecuencia. Esto es vital para señales como el EKG o el EEG, que son no estacionarias (sus características cambian con el tiempo).
@@ -37,6 +39,8 @@ El filtro Chebyshev es un filtro digital de tipo IIR utilizado en el procesamien
 
 Existen dos tipos principales de filtros Chebyshev. El tipo I presenta ondulaciones en la banda de paso, mientras que el tipo II las presenta en la banda de rechazo. En señales biomédicas, este filtro puede configurarse como pasaaltas, pasabajas, pasabanda o notch, dependiendo del ruido que se quiera reducir [6].
 
+![Tipos de filtro Chebyshev](https://www.elprocus.com/wp-content/uploads/2015/07/Types-of-Chebyshev-Filter.jpg)
+
 ### Tipo de ruido que elimina y sus frecuencias
 
 En señales EKG/ECG, el filtro Chebyshev puede emplearse para eliminar la deriva de línea base, el ruido de alta frecuencia y la interferencia de red eléctrica. La deriva de línea base aparece en frecuencias muy bajas, generalmente menores a 0.5 Hz, y puede deberse a la respiración, movimiento del paciente o cambios en el contacto electrodo-piel. Para reducirla, se puede usar un filtro pasaaltas con frecuencia de corte cercana a 0.5 Hz [6]. También se puede aplicar un filtro pasabajas para eliminar frecuencias superiores a 100 Hz, ya que la información útil del ECG suele encontrarse aproximadamente entre 0.5 Hz y 100 Hz [6]. Además, para la interferencia eléctrica de 50 Hz o 60 Hz, se puede usar un filtro notch centrado en esa frecuencia [6], [8].
@@ -48,7 +52,7 @@ En señales EEG, el filtro Chebyshev puede utilizarse para limpiar la señal ant
 En conclusión, el filtro Chebyshev es útil para procesar señales EMG, EKG/ECG y EEG porque permite eliminar ruidos según su frecuencia. Puede reducir deriva de línea base, interferencia eléctrica, artefactos de movimiento y ruido de alta frecuencia. Sin embargo, debe diseñarse correctamente, ya que un mal filtrado puede alterar la forma original de la señal biomédica y afectar su interpretación.
 
 
-### Referencias Bibliográficas (Formato IEEE):
+## Referencias Bibliográficas (Formato IEEE):
 
 
 [1] D. L. Donoho, "De-noising by soft-thresholding," IEEE Transactions on Information Theory, vol. 41, no. 3, pp. 613-627, May 1995, doi: 10.1109/18.382009.
