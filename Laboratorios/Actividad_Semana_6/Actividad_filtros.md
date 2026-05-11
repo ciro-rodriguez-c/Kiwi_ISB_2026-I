@@ -63,6 +63,7 @@ Es versátil para implementar como tipo de filtro pasa-bajos, pasa-altos, pasa-b
 
 Las frecuencias atenuadas por el filtro Butterworth dependen del rango fisiológico esperado de la señal biomédica analizada [15]. En ECG, por ejemplo, suele preservarse el contenido entre 0.5 Hz y 40 Hz, mientras que componentes inferiores pueden asociarse a variaciones lentas de línea base y componentes superiores a ruido muscular o electrónico. De manera similar, en EEG y EMG se seleccionan distintas bandas de frecuencia según las características fisiológicas de cada señal [16]. 
 
+---
 
 ## Filtro adaptativo:
 
@@ -84,6 +85,43 @@ Asimismo, estos filtros también ayudan a disminuir artefactos de movimiento, lo
 
 Otra aplicación importante es la reducción de contaminación muscular en señales EEG y ECG. Las señales musculares EMG suelen encontrarse aproximadamente entre 20 Hz y 300 Hz, e incluso pueden extenderse hasta 500 Hz dependiendo del tipo de contracción muscular [20]. Debido a esto, la actividad muscular puede superponerse sobre señales cerebrales o cardíacas y dificultar su análisis.
 
+---
+
+## Filtro Notch
+
+### Importancia
+
+El filtro Notch, también conocido como filtro rechaza-banda estrecha (*band-stop filter*), es uno de los filtros digitales más utilizados en el procesamiento de señales biomédicas como EEG, ECG y EMG. Su principal función es eliminar una frecuencia específica no deseada, generalmente la interferencia producida por la red eléctrica [21].
+
+En aplicaciones biomédicas, esta interferencia aparece debido al acoplamiento electromagnético entre los equipos electrónicos, cables, electrodos y el entorno eléctrico. La presencia de este ruido puede distorsionar la señal original y afectar análisis posteriores como detección de picos, análisis espectral o extracción de características fisiológicas [22].
+
+El filtro Notch suele implementarse mediante estructuras IIR debido a su eficiencia computacional y su capacidad de atenuar una banda muy estrecha sin afectar significativamente el resto del contenido frecuencial de la señal. Sin embargo, también puede implementarse usando filtros FIR cuando se requiere preservar mejor la fase de la señal [24].
+
+Además, en aplicaciones de ECG clínico y monitoreo fisiológico continuo, el uso de filtros Notch resulta fundamental para mejorar la calidad diagnóstica de la señal y reducir errores producidos por interferencia de línea eléctrica durante la adquisición biomédica [25].
+
+### Tipo de ruido que elimina y sus frecuencias
+
+El filtro Notch se utiliza principalmente para eliminar:
+
+- Interferencia de la red eléctrica
+- Ruido electromagnético ambiental
+- Acoplamiento de equipos electrónicos biomédicos
+
+Las frecuencias más comunes eliminadas son:
+
+- **50 Hz** → utilizado en gran parte de Europa y algunos países de Latinoamérica.
+- **60 Hz** → utilizado en Perú, Estados Unidos y otros países.
+
+Dependiendo del sistema biomédico, el filtro puede configurarse para rechazar una banda estrecha alrededor de dichas frecuencias, por ejemplo:
+
+- 59–61 Hz para sistemas de 60 Hz
+- 49–51 Hz para sistemas de 50 Hz
+
+En señales biomédicas:
+
+- **ECG:** elimina ruido eléctrico que distorsiona el complejo QRS y la línea base.
+- **EEG:** reduce interferencias que afectan bandas cerebrales como alfa, beta y gamma.
+- **EMG:** disminuye el ruido de potencia que puede confundirse con actividad muscular real.
 
 ## Referencias Bibliográficas (Formato IEEE):
 
@@ -127,3 +165,13 @@ Otra aplicación importante es la reducción de contaminación muscular en seña
 [19] G. D. Clifford, F. Azuaje, and P. McSharry, Advanced Methods and Tools for ECG Data Analysis. Norwood, MA, USA: Artech House, 2006.
 
 [20] A. Phinyomark, P. Phukpattaranont, and C. Limsakul, “Feature reduction and selection for EMG signal classification,” Expert Systems with Applications, vol. 39, no. 8, pp. 7420–7431, 2012.
+
+[21] S. Mitra, *Digital Signal Processing: A Computer-Based Approach*, 4th ed. New York, NY, USA: McGraw-Hill, 2011.
+
+[22] J. G. Proakis and D. G. Manolakis, *Digital Signal Processing: Principles, Algorithms, and Applications*, 4th ed. Upper Saddle River, NJ, USA: Pearson, 2007.
+
+[23] S. M. Kay, “Fundamentals of Statistical Signal Processing,” IEEE Press, 1993.
+
+[24] A. V. Oppenheim and R. W. Schafer, *Discrete-Time Signal Processing*, 3rd ed. Upper Saddle River, NJ, USA: Prentice Hall, 2010.
+
+[25] R. Sameni and G. D. Clifford, “A Review of Fetal ECG Signal Processing; Issues and Promising Directions,” *The Open Pacing, Electrophysiology & Therapy Journal*, vol. 3, pp. 4–20, 2010.
