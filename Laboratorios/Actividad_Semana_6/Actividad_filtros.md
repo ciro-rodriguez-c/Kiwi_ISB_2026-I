@@ -1,7 +1,10 @@
-                                                                                     El Filtro de Wavelet:
+    El Filtro de Wavelet:
 
 El Filtro de Wavelet permite un análisis de tiempo-frecuencia. Esto es vital para señales como el EKG o el EEG, que son no estacionarias (sus características cambian con el tiempo).
-Importancia
+
+Importancia:
+
+
 El Filtro de Wavelet es fundamental en el procesamiento de bioseñales porque permite un análisis tiempo-frecuencia simultáneo. Este método es ideal para el EKG y EEG, cuyas características cambian dinámicamente en el tiempo.
 Su relevancia radica en el uso de una "Wavelet Madre": una plantilla matemática que se correlaciona con la morfología real de la señal (como el complejo QRS). Esto permite aplicar la Transformada Wavelet Discreta (DWT) para descomponer la señal, filtrar el ruido mediante umbralización (Hard o Soft Thresholding) y reconstruirla sin deformar los componentes diagnósticos esenciales que los filtros tradicionales suelen suavizar en exceso [1], [2], [5].
 
@@ -12,13 +15,15 @@ Su relevancia radica en el uso de una "Wavelet Madre": una plantilla matemática
 
 
 
-                         Proceso transformada de Wavelet. [5]
+                     Proceso transformada de Wavelet. [5]
 
 
 
 
 
-Tipo de ruido que elimina y sus frecuencias
+Tipo de ruido que elimina y sus frecuencias:
+
+
 Este filtro es una herramienta versátil que actúa sobre diversos tipos de contaminación sin comprometer las bandas de interés clínico:
 •	En EKG: Elimina eficazmente la deriva de línea de base (ruido de baja frecuencia provocado por la respiración y movimiento del torso) y el ruido de alta frecuencia, preservando la integridad del intervalo ST y la onda P [4].
 •	En EEG: Es altamente selectivo para suprimir artefactos oculares (parpadeos) y ruido muscular (EMG). Su precisión permite limpiar la señal sin afectar las frecuencias rápidas de las bandas Gamma o Beta, cruciales para el análisis neurofisiológico [3].
