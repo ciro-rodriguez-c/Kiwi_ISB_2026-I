@@ -16,12 +16,9 @@ Su relevancia radica en el uso de una "Wavelet Madre": una plantilla matemática
 <img width="538" height="535" alt="imagen" src="https://github.com/user-attachments/assets/4a7e0334-d480-439f-bd46-cb23bdb1702c" />
 
 
+**Figura 1.** Proceso transformada de Wavelet. [5] 
 
-                     Proceso transformada de Wavelet. [5]
-
-
-
-
+                     
 
 ### Tipo de ruido que elimina y sus frecuencias:
 
@@ -39,7 +36,9 @@ El filtro Chebyshev es un filtro digital de tipo IIR utilizado en el procesamien
 
 Existen dos tipos principales de filtros Chebyshev. El tipo I presenta ondulaciones en la banda de paso, mientras que el tipo II las presenta en la banda de rechazo. En señales biomédicas, este filtro puede configurarse como pasaaltas, pasabajas, pasabanda o notch, dependiendo del ruido que se quiera reducir [6].
 
-![Tipos de filtro Chebyshev](https://www.elprocus.com/wp-content/uploads/2015/07/Types-of-Chebyshev-Filter.jpg)
+![Filtro Chebyshev tipo I y tipo II](https://www.elprocus.com/wp-content/uploads/2015/07/Types-of-Chebyshev-Filter.jpg)
+
+**Figura 2.** Filtro Chebyshev tipo I y tipo II. [12] 
 
 ### Tipo de ruido que elimina y sus frecuencias
 
@@ -76,5 +75,8 @@ En conclusión, el filtro Chebyshev es útil para procesar señales EMG, EKG/ECG
 [10] S. D. Muthukumaraswamy, “High-frequency brain activity and muscle artifacts in MEG/EEG: a review and recommendations,” *Frontiers in Human Neuroscience*, vol. 7, Art. no. 138, 2013, doi: 10.3389/fnhum.2013.00138. [En línea]. Disponible en: https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00138/full
 
 [11] C. S. Nayak and A. C. Anilkumar, “Normal EEG Waveforms,” *StatPearls*, Treasure Island, FL: StatPearls Publishing, 2025. [En línea]. Disponible en: https://www.ncbi.nlm.nih.gov/books/NBK539805/
+
+[12] T. Agarwal, “Different Types of Analog Filters with Explanation,” ElProCus - Electronic Projects for Engineering Students, July 16, 2015. https://www.elprocus.com/types-of-analog-filters/.
+‌
 
 
