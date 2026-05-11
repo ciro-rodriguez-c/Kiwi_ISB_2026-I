@@ -1,4 +1,4 @@
-El Filtro de Wavelet:
+                                                                                                El Filtro de Wavelet:
 
 El Filtro de Wavelet permite un análisis de tiempo-frecuencia. Esto es vital para señales como el EKG o el EEG, que son no estacionarias (sus características cambian con el tiempo).
 Importancia
@@ -12,7 +12,7 @@ Su relevancia radica en el uso de una "Wavelet Madre": una plantilla matemática
 
 
 
-Proceso transformada de Wavelet. [5]
+                              Proceso transformada de Wavelet. [5]
 
 
 
@@ -25,9 +25,17 @@ Este filtro es una herramienta versátil que actúa sobre diversos tipos de cont
 
 Referencias Bibliográficas (Formato IEEE)
 [1] D. L. Donoho, "De-noising by soft-thresholding," IEEE Transactions on Information Theory, vol. 41, no. 3, pp. 613-627, May 1995, doi: 10.1109/18.382009.
+
+
 [2] P. S. Addison, "Wavelet transforms in biomedical engineering," Annals of Biomedical Engineering, vol. 30, no. 1, pp. 115-128, Jan. 2002.
+
+
 [3] M. Balamareeswaran and D. Ebenezer, "Denoising of EEG signals using Discrete Wavelet Transform Based Scalar Quantization," Biomedical and Pharmacology Journal, vol. 8, no. 1, pp. 235-242, 2015.
+
+
 [4] M. K. Stiles, D. Clifton, N. R. Grubb, J. N. Watson, and P. S. Addison, “Wavelet‐Based Analysis of Heart‐Rate‐Dependent ECG Features,” Annals of Noninvasive Electrocardiology, vol. 9, no. 4, pp. 316–322, Oct. 2004, doi: https://doi.org/10.1111/j.1542-474x.2004.94566.x.
+
+
 ‌ [5] “Transformada Wavelet – acervo para el mejoramiento del aprendizaje de alumnos de ingeniería, en Inteligencia Artificial.” https://virtual.cuautitlan.unam.mx/intar/?page_id=1108
 ‌
 
