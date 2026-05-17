@@ -25,6 +25,7 @@ Filtro Pasabanda (ej. 0.8 a 48 Hz): Es crucial para eliminar la deriva de la lí
 Filtro Notch o Rechaza-banda (60 Hz): Dado que los cables del sistema actúan como antenas que absorben la radiación electromagnética de las luces y equipos del laboratorio, la señal cruda suele quedar completamente enmascarada por el ruido de la red eléctrica comercial (60 Hz en Perú). El filtro Notch remueve esta onda  específica de forma selectiva sin destruir los componentes fisiológicos adyacentes de la señal cerebral [5].
 
 3. ¿Puedes modular conscientemente tu señal EEG? Da un ejemplo.
+
 Sí, es totalmente posible modular la actividad eléctrica cerebral de manera voluntaria y consciente mediante el control de los estados de atención, la ejecución de tareas cognitivas o la imaginación motora [6].
 Ejemplo práctico: En el desarrollo de Interfaces Cerebro-Computador (BCI), los usuarios pueden controlar dispositivos externos aprendiendo a modular conscientemente sus ritmos sensorio-motores (como el ritmo alfa). Al imaginar el movimiento de la mano derecha (sin llegar a ejecutarlo físicamente) se produce una disminución localizada de la amplitud de la señal en el hemisferio contralateral; al detener la imaginación motora, el ritmo regresa a su amplitud normal [6]. Este mismo principio de modulación conscientes se evidencia cuando pasas de un estado de relajación a resolver un cálculo aritmético mental complejo, suprimiendo las ondas alfa y aumentando las ondas beta (13-30 Hz) debido a la carga ejecutiva frontal [4].
 
