@@ -60,6 +60,12 @@ Las señales obtenidas fueron exportadas en archivos .txt para ser procesadas po
 
 Después del filtrado, se realizó un análisis espectral usando la densidad espectral de potencia (PSD) mediante el método de Welch, con el fin de identificar las bandas cerebrales δ, θ, α y β en las diferentes condiciones evaluadas. También se analizaron los artefactos producidos por parpadeo y movimientos musculares.
 
+## Conclusiones 
+
+El desarrollo de este laboratorio permitió comprender la importancia del procesamiento y filtrado de señales biomédicas para la identificación de información relevante dentro de registros fisiológicos reales. El análisis se logró gracias a un proceso de filtrado que permitió reducir componentes no deseados como ruido eléctrico, movimientos musculares y artefactos externos. Posteriormente revisando la descomposición espectral en el dominio de la frecuencia es posible distinguir por lo menos las señales predominantes conocidas (δ, θ, α y β), además de observar la presencia de artefactos producidos tanto voluntaria (movimientos puntuales realizados solo en ciertas mediciones) como involuntariamente (parpadeo, movimiento ocular, movimiento de músculos faciales).
+Las diferencias observadas entre respuestas a preguntas simples y complejas sugieren cambios en la actividad registrada, lo cual resalta la relación entre procesos cognitivos y señales fisiológicas.
+Se puede resaltar como principal idea de la experiencia de laboratorio que, las respuestas cognitivas generan modificaciones medibles en ciertas bandas espectrales.
+
 ## Referencias
 [1] PElectroencephalography S. Sanei and J. A. Chambers, EEG Signal Processing and Machine Learning, 2nd ed. Hoboken, NJ, USA: Wiley, 2021.
 
