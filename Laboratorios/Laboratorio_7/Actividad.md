@@ -37,7 +37,31 @@ Factores Técnicos e Instrumentales: La causa más común de variación no fisio
 
 Asimetría Fisiológica: Desde la perspectiva neurofisiológica, los lóbulos frontales no se activan de manera idéntica. Existe una marcada especialización hemisférica donde el polo frontal izquierdo (Fp1) muestra una mayor tasa de activación ante estímulos que involucran lógica verbal, procesamiento analítico secuencial y aproximación conductual, mientras que el polo frontal derecho (Fp2) correlaciona con el procesamiento visoespacial, la atención global y la regulación de emociones ligadas al retiro o la inhibición [4].
 
+## Metodología
 
+### Adquisición de la señal EEG
+
+Para la adquisición de las señales EEG se utilizó un sistema BITalino (r)evolution Board Kit BLE/BT junto con el software OpenSignals, el cual permitió visualizar y guardar las señales obtenidas. La frecuencia de muestreo utilizada fue de 1000 Hz, suficiente para analizar las bandas de frecuencia presentes en señales EEG.  
+
+Se colocaron electrodos Ag/AgCl siguiendo el sistema internacional 10-20, específicamente en las posiciones Fp1 y Fp2, mientras que la referencia se colocó en la mastoide derecha. Antes de colocar los electrodos, se limpió la piel para reducir la impedancia y mejorar la calidad de la señal registrada.  
+
+⸻
+
+### Protocolo experimental
+
+El registro EEG se realizó bajo diferentes condiciones con el objetivo de observar cambios en la actividad cerebral y la aparición de artefactos.
+
+Primero se tomó una línea basal en reposo, procurando evitar movimientos faciales y oculares. Luego, el participante realizó distintas actividades, como mantener los ojos abiertos fijando la vista en un punto, generar artefactos mediante parpadeo y movimientos de masticación, y finalmente actividades libres como responder preguntas y escuchar música relajante o estimulante.
+
+Durante toda la adquisición se intentó mantener un ambiente con la menor cantidad posible de interferencias y movimientos para obtener señales más limpias.
+
+⸻
+
+### Procesamiento de la señal
+
+Las señales obtenidas fueron exportadas en archivos .txt para ser procesadas posteriormente en MATLAB. Se aplicó un filtro pasabanda en el rango aproximado de 0.8 a 48 Hz, correspondiente al rango de frecuencias de interés para señales EEG.  
+
+Después del filtrado, se realizó un análisis espectral usando la densidad espectral de potencia (PSD) mediante el método de Welch, con el fin de identificar las bandas cerebrales δ, θ, α y β en las diferentes condiciones evaluadas. También se analizaron los artefactos producidos por parpadeo y movimientos musculares.
 
 ## Referencias
 [1] PElectroencephalography S. Sanei and J. A. Chambers, EEG Signal Processing and Machine Learning, 2nd ed. Hoboken, NJ, USA: Wiley, 2021.
