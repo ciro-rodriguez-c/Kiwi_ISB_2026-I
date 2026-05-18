@@ -55,7 +55,7 @@ Durante toda la adquisición se intentó mantener un ambiente con la menor canti
 
 ---
 ## Resultados
-El formato de cada figura es el siguiente: Gráfica Amplitud vs tiempo (lado izquierdo) y Gráfica Amplitud vs Frecuencia (lado derecho)
+
 ### Señal basal 1
 <img width="1553" height="525" alt="imagen" src="https://github.com/CzairoX/Kiwi_ISB_2026-I/blob/main/Laboratorios/Laboratorio_7/Datos/basal1.png" />
                                                                           
