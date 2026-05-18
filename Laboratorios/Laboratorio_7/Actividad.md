@@ -45,8 +45,6 @@ Para la adquisición de las señales EEG se utilizó un sistema BITalino (r)evol
 
 Se colocaron electrodos Ag/AgCl siguiendo el sistema internacional 10-20, específicamente en las posiciones Fp1 y Fp2, mientras que la referencia se colocó en la mastoide derecha. Antes de colocar los electrodos, se limpió la piel para reducir la impedancia y mejorar la calidad de la señal registrada.  
 
-⸻
-
 ### Protocolo experimental
 
 El registro EEG se realizó bajo diferentes condiciones con el objetivo de observar cambios en la actividad cerebral y la aparición de artefactos.
@@ -55,7 +53,6 @@ Primero se tomó una línea basal en reposo, procurando evitar movimientos facia
 
 Durante toda la adquisición se intentó mantener un ambiente con la menor cantidad posible de interferencias y movimientos para obtener señales más limpias.
 
-⸻
 
 ### Procesamiento de la señal
 
