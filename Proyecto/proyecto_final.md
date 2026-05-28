@@ -19,15 +19,13 @@ Desarrollar y validar un algoritmo de procesamiento y análisis de señales de e
 
 Objetivos Específicos:
 
-    1) Diseñar a nivel conceptual una plataforma de adquisición y un dispositivo wearable de bajo costo posicionado en el antebrazo para el registro de señales sEMG.
+    1) Desarrollar e implementar algoritmos de filtrado adaptativo y procesamiento digital de señales para la eliminación efectiva de ruido electromagnético y artefactos de movimiento en la banda de bajas frecuencias (4-15           Hz).
 
-    2) Desarrollar e implementar algoritmos de filtrado adaptativo y procesamiento digital de señales para la eliminación efectiva de ruido electromagnético y artefactos de movimiento en la banda de bajas frecuencias (4-15           Hz).
+    2) Implementar métodos de análisis espectral, específicamente la Densidad Espectral de Potencia (PSD), para la extracción de características biomarcadoras que permitan la correcta detección y clasificación del temblor            neuromuscular.
 
-    3) Implementar métodos de análisis espectral, específicamente la Densidad Espectral de Potencia (PSD), para la extracción de características biomarcadoras que permitan la correcta detección y clasificación del temblor            neuromuscular.
+    3) Estructurar un protocolo de evaluación comparativo (mediciones antes y después del consumo de bebidas energéticas) para segmentar, limpiar y analizar los datos de forma estandarizada.
 
-    4) Estructurar un protocolo de evaluación comparativo (mediciones antes y después del consumo de bebidas energéticas) para segmentar, limpiar y analizar los datos de forma estandarizada.
-
-    5) Generar un índice cuantitativo preciso que correlacione de manera objetiva los cambios en la actividad muscular y el grado de inestabilidad motora fina con la ingesta de las sustancias estimulantes.
+    4) Generar un índice cuantitativo preciso que correlacione de manera objetiva los cambios en la actividad muscular y el grado de inestabilidad motora fina con la ingesta de las sustancias estimulantes.
 
 ---
 ## PROBLEMÁTICA A ABORDAR
