@@ -11,7 +11,10 @@ Para entender el proceso fisiológico es necesario aclarar que la mayoría de be
 El objetivo principal entonces es caracterizar y cuantificar señales EMG para un análisis posterior e identificar qué factores fisiológicos están relacionados con los episodios de temblor neuromuscular debido al consumo de bebidas energéticas.
 
 ---
+## OBJETIVOS DEL PROYECTO
 
+
+---
 ## PROBLEMÁTICA A ABORDAR
 
 Diversos estudios indican que estas bebidas representan una parte importante del consumo de cafeína en la población joven, lo que hace que estén más expuestos a sus efectos en el cuerpo [3],[4]. Sin embargo, el problema radica no solo en la cafeína, sino en cómo se consume. Muchas veces se toman de manera rápida, en grandes cantidades o sin considerar otras fuentes de cafeína en el día, como café o gaseosas.
