@@ -15,7 +15,7 @@ El objetivo principal entonces es caracterizar y cuantificar señales EMG para u
 
 Objetivo General:
 
-Desarrollar y validar un algoritmo de procesamiento y análisis de señales de electromiografía de superficie (sEMG) para la caracterización y cuantificación objetiva del temblor neuromuscular en la mano y el antebrazo, permitiendo identificar los factores fisiológicos e índices de inestabilidad motora asociados al consumo de bebidas energéticas en jóvenes.
+Desarrollar y validar un algoritmo de procesamiento y análisis de señales de electromiografía de superficie (EMG´s) para la caracterización y cuantificación objetiva del temblor neuromuscular en la mano y el antebrazo, permitiendo identificar los factores fisiológicos e índices de inestabilidad motora asociados al consumo de bebidas energéticas en jóvenes.
 
 Objetivos Específicos:
 
