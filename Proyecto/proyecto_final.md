@@ -67,6 +67,8 @@ Para los fines del curso, el enfoque principal se centrará en el desarrollo y v
 ![Fiigura 1](images/imagen_2026-04-05_204949903.png)
 
 ---
+## PROTOCOLO DE MEDICIÓN BASAL 
+Como primer avance del proyecto, se tomo la medición basal de señales EMG en el antebrazo dominante a alumnos voluntarios pertenecientes al presente curso, los cuáles tienen records de consumo de bebidas energéticas diferentes (no consumo, consumo moderado y consumo excesivo). La medición consto de una toma de 20 segundos, en los primeros 10 segundos el antebrazo se mantuvo en reposo total , apoyado de forma horizontal; después de dichos 10 segundos se le pidio a todos los participantes que dibujen un cuadrado a mano libre usando un lápiz. Se adjuntan los archivos .txt de las mediciones tomadas usando la plataforma electrónica Bitalino.
 
 ## REFERENCIAS
 
